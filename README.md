@@ -19,24 +19,30 @@ Docker remote API is a Rest API that replaces the remote command line interface.
 
 ######Commands
 List all containers
+
     GET /containers/json
 
 Create a containers
+
     POST /containers/create
 
 Inspec containers
+
     GET /containers/(id)/json
     
 Containers logs
+
     GET /containers/(id)/logs
     
 Start containers
+
     POST /containers/(id)/start
 
 Kill containers
+
     POST /containers/(id)/kill
 
-More commands and information about Docker Remote API can be found in [Flux 7](http://blog.flux7.com/blogs/docker/docker-tutorial-series-part-8-docker-remote-api).
+More commands and information about Docker Remote API can be found in [Flux 7](http://blog.flux7.com/blogs/docker/docker-tutorial-series-part-8-docker-remote-api), and [Docker API](https://docs.docker.com/reference/api/docker_remote_api/).
 
 But, after to know about some Docker Remotes API's, how to use in Java 7 ? 
 In this application, using HTTPClient for Java, to make the calls API's.
